@@ -18,3 +18,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('tasks', 'TaskController');
+Route::get('tasks/fetchdata', 'TaskController@fetchdata')->name('tasks.fetchdata');

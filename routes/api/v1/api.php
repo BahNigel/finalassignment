@@ -25,5 +25,7 @@ Route::prefix('/user')->group(function(){
     Route::post('/login','api\v1\loginController@login');
     Route::post('todo/add', [TaskController::class, 'store']);
     Route::post('todo/status', [TaskController::class, 'update']);
+    Route::get('todo/tasks', [TaskController::class, 'index']);
+    Route::get('todo/{id}/show', [TaskController::class, 'show']);
 
 });

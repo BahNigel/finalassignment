@@ -13,7 +13,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
+                        <a href="/tasks" class="btn btn-primary">View All Tasks</a>
                     welcom {{auth:: user()->name}}
                 </div>
             </div>
